@@ -494,6 +494,13 @@ let minDonators = runners.filter(function(money){
 })
 console.log(minDonators);
 
-// Problem 2
+// Problem 2 find people who work for skinix
+skinixEmps = runners.filter(function(runners)
+{return runners.company_name === "Skinix" })
 
+console.log(skinixEmps);
 // Problem 3
+let maxDonators = runners.filter(function(money){
+  return money.donation > 200;
+})
+console.log(maxDonators);
